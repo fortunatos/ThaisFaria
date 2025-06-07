@@ -2,131 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FinderSingles</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- twitter card details -->
-    <meta content='summary_large_image' name='twitter:card'/>
-    <meta content='@MarySelfiee' name='twitter:site'/>
-    <meta content='https://finderfwb.online/' name='twitter:url'/>
-    <meta content='My spicy page is on free right now!!' name='twitter:title'/>
-    <meta content='@' name='twitter:description'/>
-    <meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe8FO-jjYmkb7DBh-_1N7_u74ZygssJUGnSiper1P2e9VdgQdBL9OwAfTGepRu6Ieu8xibusjPqXohkqXNYTEVp5h84y313Dl0wfC2o6EUCIo0VLkLvpgypqP6_QJ08A2M8q4r5BBWDJ_pX9l34f3T_n95kZ4yT3tPtd7Xv-6wJHTNSrVEh4eaRnzQWATD/s320/Screenshot_20231013_143519_X.jpg' name='twitter:image'/>
-    <!-- end twitter card details --> 
-
+  <title>FinderSingles.site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
       padding: 0;
+      font-family: sans-serif;
       background: url('https://maturelovers.club/alecia/in_css_7b82a3f147c0b6b1b41b141976336713.static.jpg') no-repeat center center fixed;
       background-size: cover;
-      font-family: Arial, sans-serif;
-      color: #fff;
-      text-align: center;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.75);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 40px 20px;
-    }
-
-    .headline {
-      font-size: 30px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      color: #ff4444;
-    }
-
-    .subheadline {
-      font-size: 20px;
-      margin-bottom: 25px;
-      color: #fff;
-    }
-
-    .city-location {
-      font-size: 22px;
-      margin: 10px 0;
-      color: #ffcc00;
-    }
-
-    .features {
-      font-size: 18px;
-      margin: 20px 0;
-      line-height: 1.6;
-    }
-
-    .counter {
-      font-size: 18px;
-      color: #00ff99;
-      margin-bottom: 25px;
-    }
-
-    .cta-button {
-      background: #e60000;
       color: white;
-      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      backdrop-filter: blur(4px);
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.82);
+      border-radius: 20px;
+      padding: 30px 25px;
+      text-align: center;
+      max-width: 350px;
+      box-shadow: 0 0 10px rgba(255, 65, 108, 0.5);
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #ff416c;
+    }
+    p {
+      font-size: 15px;
+      margin: 10px 0;
+    }
+    .btn {
+      background: #ff416c;
+      color: white;
+      padding: 12px 30px;
+      font-size: 18px;
       border: none;
-      font-size: 20px;
-      border-radius: 6px;
+      border-radius: 30px;
+      margin-top: 20px;
+      cursor: pointer;
+      display: inline-block;
       text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
+      transition: background 0.3s;
     }
-
-    .cta-button:hover {
-      background: #b30000;
+    .btn:hover {
+      background: #ff2a5c;
     }
-
-    .disclaimer {
-      font-size: 13px;
-      color: #bbb;
-      margin-top: 40px;
+    .info {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #ccc;
     }
-
-    @media (max-width: 600px) {
-      .headline { font-size: 24px; }
-      .subheadline { font-size: 18px; }
-      .cta-button { font-size: 18px; padding: 12px 24px; }
+    a {
+      color: #ff6f91;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <div class="headline">Hook Up in 5 Minutes – No Account, No Hassle</div>
-    <div class="subheadline">Meet someone in <span id="city">your area</span> tonight – it’s fast, real, and 100% free to try.</div>
 
-    <div class="features">
-      ✅ No signup required<br>
-      ✅ Fast match with local singles<br>
-      ✅ Mobile-friendly and secure
-    </div>
+  <div class="card">
+    <h1>Hook Up in 5 Minutes – No Account, No Hassle</h1>
+    <p>Meet someone in <strong><span id="city">your city</span></strong> tonight – it’s fast, real, and 100% free to try.</p>
+    <p>✅ No signup required<br>✅ Fast match with local singles<br>✅ Mobile-friendly and secure</p>
+    
+    <p class="info">🔥 <span id="counter">13</span> singles are currently online in <span id="city2">your city</span></p>
 
-    <div class="counter" id="counter">🔥 Checking active singles near you...</div>
+    <a class="btn" href="https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=FinderSingles" target="_blank">
+      Start Now – View Local Matches
+    </a>
 
-    <a href="https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=FinderSingles" class="cta-button">Start Now – View Local Matches</a>
-
-    <div class="disclaimer">
+    <p class="info" style="margin-top:20px;">
       This site contains adult content and is intended for individuals 18 years or older. All users are consenting adults.
-    </div>
+    </p>
   </div>
 
   <script>
+    // Fake counter logic
+    let counter = 13;
+    const el = document.getElementById("counter");
+    setInterval(() => {
+      const delta = Math.random() < 0.5 ? -1 : 1;
+      counter = Math.max(9, Math.min(24, counter + delta));
+      el.textContent = counter;
+    }, 4000);
+
+    // Geolocation
     fetch('https://ipapi.co/json/')
       .then(res => res.json())
       .then(data => {
-        const city = data.city || 'your area';
-        document.getElementById('city').textContent = city;
-
-        const count = Math.floor(Math.random() * 6) + 10; // 10–15
-        document.getElementById('counter').textContent = `🔥 ${count} singles are currently online in ${city}`;
+        const city = data.city || 'your city';
+        document.getElementById("city").textContent = city;
+        document.getElementById("city2").textContent = city;
       })
       .catch(() => {
-        document.getElementById('counter').textContent = `🔥 12 singles are currently online near you`;
+        document.getElementById("city").textContent = 'your city';
+        document.getElementById("city2").textContent = 'your city';
       });
   </script>
+
 </body>
 </html>
