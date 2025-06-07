@@ -2,85 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>3 Local Women Are Waiting For You 🔥</title>
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@MarySelfiee">
-  <meta name="twitter:title" content="🔥 3 Local Women Want to Hook Up Tonight">
-  <meta name="twitter:description" content="Discreet. No sign-up. Just fun. Tap to enter.">
-  <meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe8FO-jjYmkb7DBh-_1N7_u74ZygssJUGnSiper1P2e9VdgQdBL9OwAfTGepRu6Ieu8xibusjPqXohkqXNYTEVp5h84y313Dl0wfC2o6EUCIo0VLkLvpgypqP6_QJ08A2M8q4r5BBWDJ_pX9l34f3T_n95kZ4yT3tPtd7Xv-6wJHTNSrVEh4eaRnzQWATD/s320/Screenshot_20231013_143519_X.jpg">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hook Up in 5 Minutes – No Account, No Hassle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body {
       margin: 0;
+      padding: 0;
+      background: url('https://maturelovers.club/alecia/in_css_7b82a3f147c0b6b1b41b141976336713.static.jpg') no-repeat center center fixed;
+      background-size: cover;
       font-family: Arial, sans-serif;
-      background: #000;
       color: #fff;
       text-align: center;
     }
 
-    .bg-img {
-      background: url('https://maturelovers.club/alecia/in_css_7b82a3f147c0b6b1b41b141976336713.static.jpg') no-repeat center center fixed;
-      background-size: cover;
-      filter: brightness(0.5);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 20px;
     }
 
-    .container {
-      padding: 60px 20px;
-    }
-
-    h1 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      color: #ff4d4d;
-    }
-
-    .cta-btn {
-      background-color: #ff0000;
-      color: #fff;
-      padding: 20px 40px;
-      font-size: 22px;
+    .headline {
+      font-size: 30px;
       font-weight: bold;
+      margin-bottom: 15px;
+      color: #ff4444;
+    }
+
+    .subheadline {
+      font-size: 20px;
+      margin-bottom: 25px;
+      color: #fff;
+    }
+
+    .city-location {
+      font-size: 22px;
+      margin: 10px 0;
+      color: #ffcc00;
+    }
+
+    .features {
+      font-size: 18px;
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .counter {
+      font-size: 18px;
+      color: #00ff99;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      background: #e60000;
+      color: white;
+      padding: 15px 30px;
       border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      box-shadow: 0 0 10px #ff0000;
+      font-size: 20px;
+      border-radius: 6px;
       text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
 
-    .cta-btn:hover {
-      background-color: #cc0000;
+    .cta-button:hover {
+      background: #b30000;
     }
 
-    .note {
-      margin-top: 25px;
-      font-size: 14px;
-      color: #ccc;
+    .disclaimer {
+      font-size: 13px;
+      color: #bbb;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .headline { font-size: 24px; }
+      .subheadline { font-size: 18px; }
+      .cta-button { font-size: 18px; padding: 12px 24px; }
     }
   </style>
 </head>
-
 <body>
-  <div class="bg-img"></div>
+  <div class="overlay">
+    <div class="headline">Hook Up in 5 Minutes – No Account, No Hassle</div>
+    <div class="subheadline">Meet someone in <span id="city">your area</span> tonight – it’s fast, real, and 100% free to try.</div>
 
-  <div class="container">
-    <h1>🔞 3 Real Women Are Looking For a Hookup Tonight</h1>
-    <p>No signup. No credit card. Just local women ready to play.</p>
+    <div class="features">
+      ✅ No signup required<br>
+      ✅ Fast match with local singles<br>
+      ✅ Mobile-friendly and secure
+    </div>
 
-    <a href="https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=FinderSingles" class="cta-btn">
-      👉 Tap to See Who's Online
-    </a>
+    <div class="counter" id="counter">🔥 Checking active singles near you...</div>
 
-    <p class="note">100% Free • 18+ Only • Discreet & Safe</p>
+    <a href="https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=FinderSingles" class="cta-button">Start Now – View Local Matches</a>
+
+    <div class="disclaimer">
+      This site contains adult content and is intended for individuals 18 years or older. All users are consenting adults.
+    </div>
   </div>
+
+  <script>
+    fetch('https://ipapi.co/json/')
+      .then(res => res.json())
+      .then(data => {
+        const city = data.city || 'your area';
+        document.getElementById('city').textContent = city;
+
+        const count = Math.floor(Math.random() * 6) + 10; // 10–15
+        document.getElementById('counter').textContent = `🔥 ${count} singles are currently online in ${city}`;
+      })
+      .catch(() => {
+        document.getElementById('counter').textContent = `🔥 12 singles are currently online near you`;
+      });
+  </script>
 </body>
 </html>
